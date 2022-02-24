@@ -1,0 +1,319 @@
+/* 
+@font-face{ 
+    font-family: ;
+    src: url(../font/)
+}
+
+@font-face{ 
+    font-family: ;
+    src: url(../font/)
+    weight: 800px;
+}
+*/
+
+
+
+div,input,textarea{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0px;
+    font-family: 'gulin', 'dotum','arial';
+}
+
+.profile{
+    width:100px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.title{
+text-align: center;
+font-size: 16px;
+}
+
+.content {
+    text-align: center;
+}
+
+.box{
+    width: 200px;
+    background-color: skyblue;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    color:white;
+    box-shadow:5px 5px gray;
+
+}
+
+.container {
+    width: 800ox;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: beige;
+
+}
+
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background-color: blueviolet;
+    /* float: left; */
+    display:inline-block;
+}
+
+.right {
+    width: 80%;
+    height: 400px;
+    background-color: coral;
+    /* float: left; */
+    display:inline-block;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+   /* clear:both; */
+   /* 컨트롤+? 누르면 주석처리 됨 */
+
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    filter:brightness(70%);
+    padding:1px;
+
+}
+
+.main-title{
+     color:white;
+     font-size: 40px;
+     margin-top:100px;
+}
+
+.main-content{
+    color:white;
+    font-size: 10px;
+    margin-top:100px;
+}
+
+.form-background{
+    background-color:black;
+    padding:30px;
+
+    margin-top:50px;
+    left:0;
+    right:0;
+    
+}
+.form-inner{
+    background-color: white;
+    padding : 10px;
+    left:0;
+    right:0;
+    margin: auto;
+    
+}
+
+.input [type = email] {
+    width: 500px;
+}
+
+.w-50 {
+    width: 50%;
+    float: left;
+}
+
+
+td {
+    border: 1px solid black;
+
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.cart-table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+.cart-table td {
+    padding: 15px;
+    border: 2
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 5px;
+}
+.flex-container{
+    display : flex;
+    /* justify-content : center;  좌우정렬 */
+    /* align-items : center;  상하정렬 */
+    /* flex-direction : column; 세로정렬 */
+    /* flex-wrap : wrap;  폭이 넘치는 요소 wrap 처리 */
+}
+
+.nav-container{
+    display :flex;
+    background-color: pink;
+    padding:10px;
+    height :20px;
+    align-items: center;
+}
+
+.nav-item1{
+    width : 100px;
+    margin-right: 10px;
+}
+
+
+
+
+  .menu {
+      display: flex;
+      width: 100%;
+      padding:10px;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .menu-box{
+   
+      width:20%;
+      text-align: center;
+      margin:5px;
+  }
+
+
+.menu-box i {
+    background-color: burlywood;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+
+.shop-bg {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.shop-container{
+    display:flex;
+    margin:auto;
+}
+
+.shop-item{
+    width: 33%;
+    padding:10px;
+
+}
+.shop-item img{
+    width: 100%;
+}
+
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: rgb(0,0,0,0.5);
+    opacity: 0; /*최종스타일:1 첫:0*/
+    transition: all 1s; /*1초동안 변해라*/
+}
+
+.overlay:hover { /*마우스 올릴때*/
+    opacity: 1;
+}
+
+
+
+.overlay-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;   /*harf-overlay에서 마진탑100으로 주면 밑으로 차지 ->따라서 밑까지 내려간거 짤라줌*/
+}
+.harf-overlay {
+    width: 100%;
+    height:100%;
+    margin-top: 110%;
+    background: rgb(0,0,0,0.5);
+    transition: all 1s; /*1초동안 변해라*/
+}
+
+.overlay-wrap:hover .harf-overlay{ /*마우스 올릴때*/
+   margin-top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+@media screen and (max-width : 1200px) { /*1200이하는 태블릿   1200이하면 폰트사이즈 30으로.. */
+    .main-title { 
+      font-size : 30px; 
+    } 
+    .nav-item1 { 
+        font-size : 20px; 
+      } 
+ 
+    .menu-box{
+        width:40%;
+  
+    }
+
+  } 
+
+   @media screen and (max-width : 768px) {  /*768이하는 모바일 */
+    .main-title { 
+      font-size : 30px; 
+    } 
+    .nav-item1 { 
+        font-size : 20px; 
+      }
+      .menu-box{
+        width:100%;
+     
+    }
+
+        
+  } 
